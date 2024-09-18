@@ -1,0 +1,55 @@
+|Decoder3x8
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => comb.IN0
+A[2] => comb.IN0
+E => comb.IN1
+E => comb.IN1
+D[0] << Decoder2x4:Dc2x4_2.D
+D[1] << Decoder2x4:Dc2x4_2.D
+D[2] << Decoder2x4:Dc2x4_2.D
+D[3] << Decoder2x4:Dc2x4_2.D
+D[4] << Decoder2x4:Dc2x4_1.D
+D[5] << Decoder2x4:Dc2x4_1.D
+D[6] << Decoder2x4:Dc2x4_1.D
+D[7] << Decoder2x4:Dc2x4_1.D
+
+
+|Decoder3x8|Decoder2x4:Dc2x4_1
+A[0] => A1.IN0
+A[0] => A3.IN0
+A[0] => A0.IN0
+A[0] => A2.IN0
+A[1] => A2.IN1
+A[1] => A3.IN1
+A[1] => A0.IN1
+A[1] => A1.IN1
+E => A0.IN2
+E => A1.IN2
+E => A2.IN2
+E => A3.IN2
+D[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= A3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder3x8|Decoder2x4:Dc2x4_2
+A[0] => A1.IN0
+A[0] => A3.IN0
+A[0] => A0.IN0
+A[0] => A2.IN0
+A[1] => A2.IN1
+A[1] => A3.IN1
+A[1] => A0.IN1
+A[1] => A1.IN1
+E => A0.IN2
+E => A1.IN2
+E => A2.IN2
+E => A3.IN2
+D[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= A3.DB_MAX_OUTPUT_PORT_TYPE
+
+

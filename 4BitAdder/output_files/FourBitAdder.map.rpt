@@ -1,6 +1,6 @@
 Analysis & Synthesis report for FourBitAdder
-Fri Sep 13 10:16:36 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Sat Sep 14 22:38:12 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,26 +40,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 13 10:16:36 2024       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; FourBitAdder                                ;
-; Top-level Entity Name              ; FourBitAdder                                ;
-; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 8                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Sep 14 22:38:12 2024          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; FourBitAdder                                   ;
+; Top-level Entity Name              ; FourBitAdder                                   ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 8                                              ;
+;     Total combinational functions  ; 8                                              ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 14                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -153,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,14 +164,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
-; ../FullAdder/FullAdder.v         ; yes             ; User Verilog HDL File  ; Z:/LabExer_Aguilar/LE2/FullAdder/FullAdder.v    ;         ;
-; FourBitAdder.v                   ; yes             ; User Verilog HDL File  ; Z:/LabExer_Aguilar/LE2/4BitAdder/FourBitAdder.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                  ;
++----------------------------------+-----------------+------------------------+---------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path    ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------+---------+
+; ../FullAdder/FullAdder.v         ; yes             ; User Verilog HDL File  ; D:/HDL/FullAdder/FullAdder.v    ;         ;
+; FourBitAdder.v                   ; yes             ; User Verilog HDL File  ; D:/HDL/4BitAdder/FourBitAdder.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------+---------+
 
 
 +----------------------------------------------------------------------+
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -268,21 +268,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 13 10:16:21 2024
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sat Sep 14 22:37:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FourBitAdder -c FourBitAdder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 2 entities, in source file /labexer_aguilar/le2/fulladder/fulladder.v
-    Info (12023): Found entity 1: HalfAdder File: Z:/LabExer_Aguilar/LE2/FullAdder/FullAdder.v Line: 9
-    Info (12023): Found entity 2: FullAdder File: Z:/LabExer_Aguilar/LE2/FullAdder/FullAdder.v Line: 19
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 2 entities, in source file /hdl/fulladder/fulladder.v
+    Info (12023): Found entity 1: HalfAdder File: D:/HDL/FullAdder/FullAdder.v Line: 9
+    Info (12023): Found entity 2: FullAdder File: D:/HDL/FullAdder/FullAdder.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file fourbitadder.v
-    Info (12023): Found entity 1: FourBitAdder File: Z:/LabExer_Aguilar/LE2/4BitAdder/FourBitAdder.v Line: 9
+    Info (12023): Found entity 1: FourBitAdder File: D:/HDL/4BitAdder/FourBitAdder.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file tb_fourbitadder.v
-    Info (12023): Found entity 1: tb_FourBitAdder File: Z:/LabExer_Aguilar/LE2/4BitAdder/tb_FourBitAdder.v Line: 11
+    Info (12023): Found entity 1: tb_FourBitAdder File: D:/HDL/4BitAdder/tb_FourBitAdder.v Line: 11
 Info (12127): Elaborating entity "FourBitAdder" for the top level hierarchy
-Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:FA1" File: Z:/LabExer_Aguilar/LE2/4BitAdder/FourBitAdder.v Line: 18
-Info (12128): Elaborating entity "HalfAdder" for hierarchy "FullAdder:FA1|HalfAdder:HA1" File: Z:/LabExer_Aguilar/LE2/FullAdder/FullAdder.v Line: 25
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:FA1" File: D:/HDL/4BitAdder/FourBitAdder.v Line: 18
+Info (12128): Elaborating entity "HalfAdder" for hierarchy "FullAdder:FA1|HalfAdder:HA1" File: D:/HDL/FullAdder/FullAdder.v Line: 25
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -291,9 +291,9 @@ Info (21057): Implemented 22 device resources after synthesis - the final resour
     Info (21059): Implemented 5 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Fri Sep 13 10:16:36 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4753 megabytes
+    Info: Processing ended: Sat Sep 14 22:38:12 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:24
 
 

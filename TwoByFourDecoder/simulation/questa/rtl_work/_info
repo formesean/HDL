@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/HDL/TwoByFourDecoder/simulation/questa
+vDecoder2x4
+Z1 !s110 1726664458
+!i10b 1
+!s100 4V8>I^9mOIhBYWC]:n=EB3
+IZ=W[2?FX?PV@0Uhn566M^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1726664309
+8D:/HDL/TwoByFourDecoder/Decoder2x4.v
+FD:/HDL/TwoByFourDecoder/Decoder2x4.v
+L0 9
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1726664458.000000
+!s107 D:/HDL/TwoByFourDecoder/Decoder2x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/HDL/TwoByFourDecoder|D:/HDL/TwoByFourDecoder/Decoder2x4.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/HDL/TwoByFourDecoder
+Z7 tCvgOpt 0
+n@decoder2x4
+vtb_Decoder2x4
+R1
+!i10b 1
+!s100 cA6d5?6LVhGkCmEcO?]Ce0
+IhUfQ^8XS;ZO_OPgX6o?kL1
+R2
+R0
+w1726664139
+8D:/HDL/TwoByFourDecoder/tb_Decoder2x4.v
+FD:/HDL/TwoByFourDecoder/tb_Decoder2x4.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/HDL/TwoByFourDecoder/tb_Decoder2x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/HDL/TwoByFourDecoder|D:/HDL/TwoByFourDecoder/tb_Decoder2x4.v|
+!i113 1
+R5
+R6
+R7
+ntb_@decoder2x4
