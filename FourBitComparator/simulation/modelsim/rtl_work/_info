@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/parmesean/code/FourBitComparator/simulation/modelsim
+vFourBitComparator
+Z1 !s110 1728394837
+!i10b 1
+!s100 VDodN]c77;D;kSDMCOnkf1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkB^bd3?:L4QDfRhXB0:`[2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1728394517
+8/home/parmesean/code/FourBitComparator/FourBitComparator.v
+F/home/parmesean/code/FourBitComparator/FourBitComparator.v
+!i122 0
+L0 8 11
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1728394837.000000
+!s107 /home/parmesean/code/FourBitComparator/FourBitComparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/parmesean/code/FourBitComparator|/home/parmesean/code/FourBitComparator/FourBitComparator.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/parmesean/code/FourBitComparator
+Z8 tCvgOpt 0
+n@four@bit@comparator
+vtb_FourBitComparator
+R1
+!i10b 1
+!s100 B4QjZWBQYdO6KK5Fhz=;k2
+R2
+IR`n3FIoKCiFFi_AoHBPcm1
+R3
+R0
+w1728394598
+8/home/parmesean/code/FourBitComparator/tb_FourBitComparator.v
+F/home/parmesean/code/FourBitComparator/tb_FourBitComparator.v
+!i122 1
+L0 9 34
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parmesean/code/FourBitComparator/tb_FourBitComparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/parmesean/code/FourBitComparator|/home/parmesean/code/FourBitComparator/tb_FourBitComparator.v|
+!i113 1
+R6
+R7
+R8
+ntb_@four@bit@comparator
