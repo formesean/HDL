@@ -1,0 +1,16 @@
+/*********************************************************
+*	File: 				Hex-to-7seg_Decoder.v
+*	Author: 				Sean Karl Tyrese G. Aguilar
+*	Class:				CpE 3101L
+*	Group/Schedule:	Group 3 - Friday, 7:30 AM to 10:30 AM
+*	Description:		Hex-to-7seg_Decoder.v Module
+*********************************************************/
+module Hex_to_7seg_Decoder(
+	input		[3:0] Hex,
+	input		DP,
+	output	[7:0] SSeg
+);
+
+
+
+endmodule

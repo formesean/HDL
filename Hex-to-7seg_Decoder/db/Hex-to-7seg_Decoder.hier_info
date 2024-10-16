@@ -1,0 +1,16 @@
+|Hex_to_7seg_Decoder
+Hex[0] => Ram0.RADDR
+Hex[1] => Ram0.RADDR1
+Hex[2] => Ram0.RADDR2
+Hex[3] => Ram0.RADDR3
+DP => Ram0.RADDR4
+SSeg[0] <= Ram0.DATAOUT
+SSeg[1] <= Ram0.DATAOUT1
+SSeg[2] <= Ram0.DATAOUT2
+SSeg[3] <= Ram0.DATAOUT3
+SSeg[4] <= Ram0.DATAOUT4
+SSeg[5] <= Ram0.DATAOUT5
+SSeg[6] <= Ram0.DATAOUT6
+SSeg[7] <= Ram0.DATAOUT7
+
+

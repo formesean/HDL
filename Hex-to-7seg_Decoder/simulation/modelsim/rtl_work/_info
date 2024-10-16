@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/simulation/modelsim
+vHex_to_7seg_Decoder
+!s110 1728627891
+!i10b 1
+!s100 B]odeiRHaRoG<=nD`N46J3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:MdHBSlZkZZElmS<cT?V?0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1728626952
+8Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/Hex_to_7seg_Decoder.v
+FZ:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/Hex_to_7seg_Decoder.v
+!i122 0
+L0 8 46
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1728627891.000000
+!s107 Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/Hex_to_7seg_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder|Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/Hex_to_7seg_Decoder.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder
+Z6 tCvgOpt 0
+n@hex_to_7seg_@decoder
+vtb_Hex_to_7seg_Decoder
+!s110 1728627892
+!i10b 1
+!s100 gToB2R90nF:Cg]nK^lQ?20
+R1
+I>FC@DEPAWTNiAA1fMd:3M0
+R2
+R0
+w1728627877
+8Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/tb_Hex_to_7seg_Decoder.v
+FZ:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/tb_Hex_to_7seg_Decoder.v
+!i122 1
+L0 9 63
+R3
+r1
+!s85 0
+31
+!s108 1728627892.000000
+!s107 Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/tb_Hex_to_7seg_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder|Z:/LabExer_Aguilar/LE5/Hex-to-7seg_Decoder/tb_Hex_to_7seg_Decoder.v|
+!i113 1
+R4
+R5
+R6
+ntb_@hex_to_7seg_@decoder
