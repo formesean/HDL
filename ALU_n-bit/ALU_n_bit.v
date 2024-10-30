@@ -34,7 +34,7 @@ module ALU_n_bit
 			3'b000 :	
 				begin
 					Result = A + B + CB_in;
-					CB_out = Result > ((2**n) - 1);
+					CB_out = (A + B + CB_in) > ((2**n) - 1);
 				end
 			3'b001 :
 				begin
