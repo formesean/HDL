@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do JK_FF_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop {Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/JK_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:20:23 on Nov 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop" Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/JK_FF.v 
+# -- Compiling module JK_FF
+# 
+# Top level modules:
+# 	JK_FF
+# End time: 08:20:24 on Nov 22,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop {Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:20:25 on Nov 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop" Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v 
+# -- Compiling module tb_JK_FF
+# 
+# Top level modules:
+# 	tb_JK_FF
+# End time: 08:20:25 on Nov 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_JK_FF
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_JK_FF 
+# Start time: 08:20:25 on Nov 22,2024
+# Loading work.tb_JK_FF
+# Loading work.JK_FF
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Test Bench | JK FLIP FLOP...
+# Time =  0 ns | J = 0 | K = 0 | CLK = 0 | RESET = 1 | Q = 0 | Q_bar = 1
+# Time =  5 ns | J = 0 | K = 1 | CLK = 1 | RESET = 1 | Q = 0 | Q_bar = 1
+# Time = 10 ns | J = 1 | K = 0 | CLK = 0 | RESET = 0 | Q = 1 | Q_bar = 0
+# Time = 15 ns | J = 1 | K = 1 | CLK = 1 | RESET = 0 | Q = 1 | Q_bar = 0
+# Time = 20 ns | J = 0 | K = 0 | CLK = 0 | RESET = 0 | Q = 1 | Q_bar = 0
+# Time = 25 ns | J = 0 | K = 1 | CLK = 1 | RESET = 0 | Q = 1 | Q_bar = 0
+# Time = 30 ns | J = 1 | K = 0 | CLK = 0 | RESET = 0 | Q = 1 | Q_bar = 0
+# Time = 35 ns | J = 1 | K = 1 | CLK = 1 | RESET = 0 | Q = 1 | Q_bar = 0
+# Time = 40 ns | J = 1 | K = 1 | CLK = 0 | RESET = 0 | Q = 0 | Q_bar = 1
+# ** Note: $stop    : Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v(40)
+#    Time: 45 ns  Iteration: 0  Instance: /tb_JK_FF
+# Break in Module tb_JK_FF at Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v line 40
+# End time: 08:24:21 on Nov 22,2024, Elapsed time: 0:03:56
+# Errors: 0, Warnings: 0

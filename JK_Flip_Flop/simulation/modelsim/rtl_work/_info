@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/LabExer_Aguilar/LE6/JK_Flip_Flop/simulation/modelsim
+vJK_FF
+!s110 1732234824
+!i10b 1
+!s100 zjf>ZXOP7Vie>KG_1W4m42
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRh;=R5bKEam3HQf4;:fcS0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1732234784
+8Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/JK_FF.v
+FZ:/LabExer_Aguilar/LE6/JK_Flip_Flop/JK_FF.v
+!i122 0
+L0 9 39
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1732234823.000000
+!s107 Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/JK_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop|Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/JK_FF.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop
+Z6 tCvgOpt 0
+n@j@k_@f@f
+vtb_JK_FF
+!s110 1732234825
+!i10b 1
+!s100 <d?EFS]L8i7fXclh`fg:l2
+R1
+I[Wa]lfjdC9le9zY3CjiTg3
+R2
+R0
+w1732234529
+8Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v
+FZ:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v
+!i122 1
+L0 9 37
+R3
+r1
+!s85 0
+31
+!s108 1732234825.000000
+!s107 Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/LabExer_Aguilar/LE6/JK_Flip_Flop|Z:/LabExer_Aguilar/LE6/JK_Flip_Flop/tb_JK_FF.v|
+!i113 1
+R4
+R5
+R6
+ntb_@j@k_@f@f

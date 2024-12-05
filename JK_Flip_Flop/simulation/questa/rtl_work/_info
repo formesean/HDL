@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/HDL/JK_Flip_Flop/simulation/questa
+vJK_FF
+Z1 !s110 1733396768
+!i10b 1
+!s100 E7cG@RZ4><5IRCZg5fJ102
+I7]FgGBbgEJOn^QViC94kE2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1733396431
+8D:/HDL/JK_Flip_Flop/JK_FF.v
+FD:/HDL/JK_Flip_Flop/JK_FF.v
+L0 8
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1733396767.000000
+!s107 D:/HDL/JK_Flip_Flop/JK_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/HDL/JK_Flip_Flop|D:/HDL/JK_Flip_Flop/JK_FF.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/HDL/JK_Flip_Flop
+Z6 tCvgOpt 0
+n@j@k_@f@f
+vtb_JK_FF
+R1
+!i10b 1
+!s100 hE`YbWhPlQP8lPbHGAEJV1
+InoT4hif5X1nOTWA[3:EgC0
+R2
+R0
+w1733396602
+8D:/HDL/JK_Flip_Flop/tb_JK_FF.v
+FD:/HDL/JK_Flip_Flop/tb_JK_FF.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1733396768.000000
+!s107 D:/HDL/JK_Flip_Flop/tb_JK_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/HDL/JK_Flip_Flop|D:/HDL/JK_Flip_Flop/tb_JK_FF.v|
+!i113 1
+R4
+R5
+R6
+ntb_@j@k_@f@f

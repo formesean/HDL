@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/LabExer_Aguilar/LE6/Counter_4_Bit/simulation/modelsim
+vCounter_4_Bit
+!s110 1732235375
+!i10b 1
+!s100 hX@5RAdAdl@]LbGFBKEU@1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IP3536FW@;ARRMUfE:o?M^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1732235226
+8Z:/LabExer_Aguilar/LE6/Counter_4_Bit/Counter_4_Bit.v
+FZ:/LabExer_Aguilar/LE6/Counter_4_Bit/Counter_4_Bit.v
+!i122 0
+L0 8 20
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1732235375.000000
+!s107 Z:/LabExer_Aguilar/LE6/Counter_4_Bit/Counter_4_Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit|Z:/LabExer_Aguilar/LE6/Counter_4_Bit/Counter_4_Bit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit
+Z7 tCvgOpt 0
+n@counter_4_@bit
+vtb_Counter_4_Bit
+!s110 1732235376
+!i10b 1
+!s100 ia[d4AN1VgI<fEECdh_3d0
+R1
+IU_fz^CT=8K;3S_lJ7TUjG0
+R2
+R0
+w1732232762
+8Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v
+FZ:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v
+!i122 1
+L0 9 73
+R3
+r1
+!s85 0
+31
+R4
+!s107 Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit|Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v|
+!i113 1
+R5
+R6
+R7
+ntb_@counter_4_@bit

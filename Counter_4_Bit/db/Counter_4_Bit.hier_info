@@ -1,0 +1,31 @@
+|Counter_4_Bit
+Clk => Count_out[0]~reg0.CLK
+Clk => Count_out[1]~reg0.CLK
+Clk => Count_out[2]~reg0.CLK
+Clk => Count_out[3]~reg0.CLK
+nReset => Count_out[0]~reg0.ACLR
+nReset => Count_out[1]~reg0.ACLR
+nReset => Count_out[2]~reg0.ACLR
+nReset => Count_out[3]~reg0.ACLR
+Load => Count_out.OUTPUTSELECT
+Load => Count_out.OUTPUTSELECT
+Load => Count_out.OUTPUTSELECT
+Load => Count_out.OUTPUTSELECT
+Count_en => Count_out.OUTPUTSELECT
+Count_en => Count_out.OUTPUTSELECT
+Count_en => Count_out.OUTPUTSELECT
+Count_en => Count_out.OUTPUTSELECT
+Up => Count_out.OUTPUTSELECT
+Up => Count_out.OUTPUTSELECT
+Up => Count_out.OUTPUTSELECT
+Up => Count_out.OUTPUTSELECT
+Count_in[0] => Count_out.DATAB
+Count_in[1] => Count_out.DATAB
+Count_in[2] => Count_out.DATAB
+Count_in[3] => Count_out.DATAB
+Count_out[0] <= Count_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[1] <= Count_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[2] <= Count_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[3] <= Count_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

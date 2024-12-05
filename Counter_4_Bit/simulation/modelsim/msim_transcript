@@ -1,0 +1,116 @@
+# Reading pref.tcl
+# do Counter_4_Bit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit {Z:/LabExer_Aguilar/LE6/Counter_4_Bit/Counter_4_Bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:29:35 on Nov 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit" Z:/LabExer_Aguilar/LE6/Counter_4_Bit/Counter_4_Bit.v 
+# -- Compiling module Counter_4_Bit
+# 
+# Top level modules:
+# 	Counter_4_Bit
+# End time: 08:29:35 on Nov 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit {Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:29:35 on Nov 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Z:/LabExer_Aguilar/LE6/Counter_4_Bit" Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v 
+# -- Compiling module tb_Counter_4_Bit
+# 
+# Top level modules:
+# 	tb_Counter_4_Bit
+# End time: 08:29:36 on Nov 22,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Counter_4_Bit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Counter_4_Bit 
+# Start time: 08:29:36 on Nov 22,2024
+# Loading work.tb_Counter_4_Bit
+# Loading work.Counter_4_Bit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Test Bench | Counter_4bit...
+# Initialize inputs...
+# Test Bench | Counter_4bit...
+# Time =  0 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 0 | Up = 0 | Count_in = 0000 | Count_out =  x
+# Time =  5 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 0 | Up = 0 | Count_in = 0000 | Count_out =  x
+# Loading Counter with 15d
+# Time = 10 ns | Clk = 0 | nReset = 1 | Load = 1 | Count_en = 0 | Up = 0 | Count_in = 0000 | Count_out =  0
+# Time = 15 ns | Clk = 1 | nReset = 1 | Load = 1 | Count_en = 0 | Up = 0 | Count_in = 0000 | Count_out =  0
+# Time = 20 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 0 | Up = 0 | Count_in = 0000 | Count_out =  0
+# Time = 25 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 0 | Up = 0 | Count_in = 0000 | Count_out =  0
+# Time = 30 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 0 | Up = 0 | Count_in = 1111 | Count_out =  0
+# Time = 35 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 0 | Up = 0 | Count_in = 1111 | Count_out =  0
+# Enabling Counting
+# Time = 40 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 15
+# Time = 45 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 15
+# Countdown:
+# Time = 50 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 14
+# Time = 55 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 14
+# Time = 60 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 13
+# Time = 65 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 13
+# Time = 70 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 12
+# Time = 75 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 12
+# Time = 80 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 11
+# Time = 85 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 11
+# Time = 90 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 10
+# Time = 95 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out = 10
+# Time = 100 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  9
+# Time = 105 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  9
+# Time = 110 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  8
+# Time = 115 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  8
+# Time = 120 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  7
+# Time = 125 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  7
+# Time = 130 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  6
+# Time = 135 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  6
+# Time = 140 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  5
+# Time = 145 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  5
+# Time = 150 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  4
+# Time = 155 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  4
+# Time = 160 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  3
+# Time = 165 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  3
+# Time = 170 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  2
+# Time = 175 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  2
+# Time = 180 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  1
+# Time = 185 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  1
+# Time = 190 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  0
+# Time = 195 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 0 | Count_in = 1111 | Count_out =  0
+# Time = 200 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  1
+# Time = 205 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  1
+# Time = 210 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  2
+# Time = 215 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  2
+# Time = 220 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  3
+# Time = 225 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  3
+# Time = 230 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  4
+# Time = 235 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  4
+# Time = 240 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  5
+# Time = 245 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  5
+# Time = 250 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  6
+# Time = 255 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  6
+# Time = 260 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  7
+# Time = 265 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  7
+# Resetting
+# Time = 270 ns | Clk = 0 | nReset = 0 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  0
+# Time = 275 ns | Clk = 1 | nReset = 0 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  0
+# Time = 280 ns | Clk = 0 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  1
+# Time = 285 ns | Clk = 1 | nReset = 1 | Load = 0 | Count_en = 1 | Up = 1 | Count_in = 1111 | Count_out =  1
+# ** Note: $stop    : Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v(74)
+#    Time: 290 ns  Iteration: 0  Instance: /tb_Counter_4_Bit
+# Break in Module tb_Counter_4_Bit at Z:/LabExer_Aguilar/LE6/Counter_4_Bit/tb_Counter_4_Bit.v line 74
+# End time: 08:31:48 on Nov 22,2024, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 0

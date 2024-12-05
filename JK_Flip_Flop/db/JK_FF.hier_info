@@ -1,0 +1,13 @@
+|JK_FF
+J => Mux0.IN3
+J => Mux1.IN3
+K => Mux0.IN4
+K => Mux1.IN4
+nReset => Qbar~reg0.PRESET
+nReset => Q~reg0.ACLR
+Clk => Qbar~reg0.CLK
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= Qbar~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
