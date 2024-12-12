@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Dec  5 21:25:52 2024
+Analysis & Synthesis Status : Successful - Fri Dec 13 01:05:08 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Counter_4_Bit
-Top-level Entity Name : Counter_4_Bit
+Top-level Entity Name : top
 Family : MAX 10
-Total logic elements : 6
-    Total combinational functions : 6
-    Dedicated logic registers : 4
-Total registers : 4
+Total logic elements : 54
+    Total combinational functions : 54
+    Dedicated logic registers : 31
+Total registers : 31
 Total pins : 13
 Total virtual pins : 0
 Total memory bits : 0

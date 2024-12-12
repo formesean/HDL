@@ -20,11 +20,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Clk",
+					"name" : "nReset",
 					"strict" : false
 				},
 				{
-					"name" : "nReset",
+					"name" : "clk_50MHz",
 					"strict" : false
 				}
 			]

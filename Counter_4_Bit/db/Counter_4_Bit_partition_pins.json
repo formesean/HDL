@@ -32,11 +32,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Clk",
-					"strict" : false
-				},
-				{
-					"name" : "nReset",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
@@ -53,6 +49,10 @@
 				},
 				{
 					"name" : "Count_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50MHz",
 					"strict" : false
 				}
 			]

@@ -1,4 +1,78 @@
-|Counter_4_Bit
+|top
+clk_50MHz => clk_50MHz.IN1
+reset => reset.IN1
+Load => Load.IN1
+Count_en => Count_en.IN1
+Up => Up.IN1
+Count_in[0] => Count_in[0].IN1
+Count_in[1] => Count_in[1].IN1
+Count_in[2] => Count_in[2].IN1
+Count_in[3] => Count_in[3].IN1
+Count_out[0] << Counter_4_Bit:counter_4_Bit.Count_out
+Count_out[1] << Counter_4_Bit:counter_4_Bit.Count_out
+Count_out[2] << Counter_4_Bit:counter_4_Bit.Count_out
+Count_out[3] << Counter_4_Bit:counter_4_Bit.Count_out
+
+
+|top|clock_divider:clk_div
+clk_50MHz => clk_1Hz~reg0.CLK
+clk_50MHz => counter[0].CLK
+clk_50MHz => counter[1].CLK
+clk_50MHz => counter[2].CLK
+clk_50MHz => counter[3].CLK
+clk_50MHz => counter[4].CLK
+clk_50MHz => counter[5].CLK
+clk_50MHz => counter[6].CLK
+clk_50MHz => counter[7].CLK
+clk_50MHz => counter[8].CLK
+clk_50MHz => counter[9].CLK
+clk_50MHz => counter[10].CLK
+clk_50MHz => counter[11].CLK
+clk_50MHz => counter[12].CLK
+clk_50MHz => counter[13].CLK
+clk_50MHz => counter[14].CLK
+clk_50MHz => counter[15].CLK
+clk_50MHz => counter[16].CLK
+clk_50MHz => counter[17].CLK
+clk_50MHz => counter[18].CLK
+clk_50MHz => counter[19].CLK
+clk_50MHz => counter[20].CLK
+clk_50MHz => counter[21].CLK
+clk_50MHz => counter[22].CLK
+clk_50MHz => counter[23].CLK
+clk_50MHz => counter[24].CLK
+clk_50MHz => counter[25].CLK
+reset => clk_1Hz~reg0.ACLR
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+reset => counter[9].ACLR
+reset => counter[10].ACLR
+reset => counter[11].ACLR
+reset => counter[12].ACLR
+reset => counter[13].ACLR
+reset => counter[14].ACLR
+reset => counter[15].ACLR
+reset => counter[16].ACLR
+reset => counter[17].ACLR
+reset => counter[18].ACLR
+reset => counter[19].ACLR
+reset => counter[20].ACLR
+reset => counter[21].ACLR
+reset => counter[22].ACLR
+reset => counter[23].ACLR
+reset => counter[24].ACLR
+reset => counter[25].ACLR
+clk_1Hz <= clk_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|Counter_4_Bit:counter_4_Bit
 Clk => Count_out[0]~reg0.CLK
 Clk => Count_out[1]~reg0.CLK
 Clk => Count_out[2]~reg0.CLK

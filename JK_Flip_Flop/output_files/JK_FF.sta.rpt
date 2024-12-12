@@ -1,6 +1,6 @@
 Timing Analyzer report for JK_FF
-Fri Nov 22 10:28:48 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Dec 13 01:23:20 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -53,7 +53,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -70,18 +70,18 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                     ;
-+-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                              ;
-; Revision Name         ; JK_FF                                               ;
-; Device Family         ; MAX 10                                              ;
-; Device Name           ; 10M50DAF484C7G                                      ;
-; Timing Models         ; Final                                               ;
-; Delay Model           ; Combined                                            ;
-; Rise/Fall Delays      ; Enabled                                             ;
-+-----------------------+-----------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; JK_FF                                                  ;
+; Device Family         ; MAX 10                                                 ;
+; Device Name           ; 10M50DAF484C7G                                         ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Combined                                               ;
+; Rise/Fall Delays      ; Enabled                                                ;
++-----------------------+--------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -89,16 +89,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.02        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processors 3-6         ;   0.3%      ;
+;     Processor 2            ;   0.7%      ;
+;     Processors 3-4         ;   0.7%      ;
 +----------------------------+-------------+
 
 
@@ -117,8 +117,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------+-----------------+-------------------------------+------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name                    ; Note                                           ;
 +-------------+-----------------+-------------------------------+------------------------------------------------+
-; 183.39 MHz  ; 183.39 MHz      ; clk_50MHz                     ;                                                ;
-; 1329.79 MHz ; 416.15 MHz      ; clock_divider:clk_div|clk_1Hz ; limit due to minimum period restriction (tmin) ;
+; 177.21 MHz  ; 177.21 MHz      ; clk_50MHz                     ;                                                ;
+; 1328.02 MHz ; 416.15 MHz      ; clock_divider:clk_div|clk_1Hz ; limit due to minimum period restriction (tmin) ;
 +-------------+-----------------+-------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -128,8 +128,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; clk_50MHz                     ; -4.453 ; -53.073       ;
-; clock_divider:clk_div|clk_1Hz ; 0.248  ; 0.000         ;
+; clk_50MHz                     ; -4.643 ; -52.918       ;
+; clock_divider:clk_div|clk_1Hz ; 0.247  ; 0.000         ;
 +-------------------------------+--------+---------------+
 
 
@@ -138,8 +138,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+-------+---------------+
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
-; clock_divider:clk_div|clk_1Hz ; 0.348 ; 0.000         ;
-; clk_50MHz                     ; 0.417 ; 0.000         ;
+; clock_divider:clk_div|clk_1Hz ; 0.347 ; 0.000         ;
+; clk_50MHz                     ; 0.419 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -171,14 +171,14 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                             ;
-+------------+-----------------+-------------------------------+------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name                    ; Note                                           ;
-+------------+-----------------+-------------------------------+------------------------------------------------+
-; 198.02 MHz ; 198.02 MHz      ; clk_50MHz                     ;                                                ;
-; 1455.6 MHz ; 416.15 MHz      ; clock_divider:clk_div|clk_1Hz ; limit due to minimum period restriction (tmin) ;
-+------------+-----------------+-------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                              ;
++-------------+-----------------+-------------------------------+------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                    ; Note                                           ;
++-------------+-----------------+-------------------------------+------------------------------------------------+
+; 190.62 MHz  ; 190.62 MHz      ; clk_50MHz                     ;                                                ;
+; 1457.73 MHz ; 416.15 MHz      ; clock_divider:clk_div|clk_1Hz ; limit due to minimum period restriction (tmin) ;
++-------------+-----------------+-------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -187,8 +187,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; clk_50MHz                     ; -4.050 ; -45.727       ;
-; clock_divider:clk_div|clk_1Hz ; 0.313  ; 0.000         ;
+; clk_50MHz                     ; -4.246 ; -45.938       ;
+; clock_divider:clk_div|clk_1Hz ; 0.314  ; 0.000         ;
 +-------------------------------+--------+---------------+
 
 
@@ -197,8 +197,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+-------+---------------+
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
-; clock_divider:clk_div|clk_1Hz ; 0.310 ; 0.000         ;
-; clk_50MHz                     ; 0.385 ; 0.000         ;
+; clock_divider:clk_div|clk_1Hz ; 0.311 ; 0.000         ;
+; clk_50MHz                     ; 0.387 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -235,7 +235,7 @@ No synchronizer chains to report.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; clk_50MHz                     ; -1.407 ; -7.003        ;
+; clk_50MHz                     ; -1.502 ; -7.488        ;
 ; clock_divider:clk_div|clk_1Hz ; 0.659  ; 0.000         ;
 +-------------------------------+--------+---------------+
 
@@ -246,7 +246,7 @@ No synchronizer chains to report.
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
 ; clock_divider:clk_div|clk_1Hz ; 0.151 ; 0.000         ;
-; clk_50MHz                     ; 0.165 ; 0.000         ;
+; clk_50MHz                     ; 0.166 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -267,7 +267,7 @@ No paths to report.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; clk_50MHz                     ; -3.000 ; -30.700       ;
+; clk_50MHz                     ; -3.000 ; -30.966       ;
 ; clock_divider:clk_div|clk_1Hz ; -1.000 ; -2.000        ;
 +-------------------------------+--------+---------------+
 
@@ -283,11 +283,11 @@ No synchronizer chains to report.
 +--------------------------------+---------+-------+----------+---------+---------------------+
 ; Clock                          ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack               ; -4.453  ; 0.151 ; N/A      ; N/A     ; -3.000              ;
-;  clk_50MHz                     ; -4.453  ; 0.165 ; N/A      ; N/A     ; -3.000              ;
-;  clock_divider:clk_div|clk_1Hz ; 0.248   ; 0.151 ; N/A      ; N/A     ; -1.403              ;
-; Design-wide TNS                ; -53.073 ; 0.0   ; 0.0      ; 0.0     ; -43.687             ;
-;  clk_50MHz                     ; -53.073 ; 0.000 ; N/A      ; N/A     ; -40.881             ;
+; Worst-case Slack               ; -4.643  ; 0.151 ; N/A      ; N/A     ; -3.000              ;
+;  clk_50MHz                     ; -4.643  ; 0.166 ; N/A      ; N/A     ; -3.000              ;
+;  clock_divider:clk_div|clk_1Hz ; 0.247   ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS                ; -52.918 ; 0.0   ; 0.0      ; 0.0     ; -43.687             ;
+;  clk_50MHz                     ; -52.918 ; 0.000 ; N/A      ; N/A     ; -40.881             ;
 ;  clock_divider:clk_div|clk_1Hz ; 0.000   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
 +--------------------------------+---------+-------+----------+---------+---------------------+
 
@@ -310,7 +310,7 @@ No synchronizer chains to report.
 +---------------------+-----------------------+-----------------+-----------------+
 ; J                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; K                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; reset               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; nReset              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; clk_50MHz           ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -329,7 +329,7 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Q            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; Qbar         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
-; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.39e-08 V                   ; 2.39 V              ; -0.0409 V           ; 0.21 V                               ; 0.121 V                              ; 4.7e-10 s                   ; 5.93e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.39e-08 V                  ; 2.39 V             ; -0.0409 V          ; 0.21 V                              ; 0.121 V                             ; 4.7e-10 s                  ; 5.93e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.39e-08 V                   ; 2.39 V              ; -0.0409 V           ; 0.211 V                              ; 0.121 V                              ; 4.7e-10 s                   ; 5.93e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.39e-08 V                  ; 2.39 V             ; -0.0409 V          ; 0.211 V                             ; 0.121 V                             ; 4.7e-10 s                  ; 5.93e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -351,7 +351,7 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Q            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; Qbar         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
-; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.1e-10 s                   ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.1e-10 s                  ; 4.41e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.11e-10 s                  ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.11e-10 s                 ; 4.41e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -399,7 +399,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 33    ; 33   ;
+; Unconstrained Input Port Paths  ; 6     ; 6    ;
 ; Unconstrained Output Ports      ; 2     ; 2    ;
 ; Unconstrained Output Port Paths ; 2     ; 2    ;
 +---------------------------------+-------+------+
@@ -422,7 +422,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; J          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; K          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nReset     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -443,7 +443,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; J          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; K          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nReset     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -462,12 +462,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 22 10:28:41 2024
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Fri Dec 13 01:23:14 2024
 Info: Command: quartus_sta JK_FF -c JK_FF
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'JK_FF.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -481,16 +481,16 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.453
+Info (332146): Worst-case setup slack is -4.643
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.453             -53.073 clk_50MHz 
-    Info (332119):     0.248               0.000 clock_divider:clk_div|clk_1Hz 
-Info (332146): Worst-case hold slack is 0.348
+    Info (332119):    -4.643             -52.918 clk_50MHz 
+    Info (332119):     0.247               0.000 clock_divider:clk_div|clk_1Hz 
+Info (332146): Worst-case hold slack is 0.347
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.348               0.000 clock_divider:clk_div|clk_1Hz 
-    Info (332119):     0.417               0.000 clk_50MHz 
+    Info (332119):     0.347               0.000 clock_divider:clk_div|clk_1Hz 
+    Info (332119):     0.419               0.000 clk_50MHz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -503,16 +503,16 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.050
+Info (332146): Worst-case setup slack is -4.246
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.050             -45.727 clk_50MHz 
-    Info (332119):     0.313               0.000 clock_divider:clk_div|clk_1Hz 
-Info (332146): Worst-case hold slack is 0.310
+    Info (332119):    -4.246             -45.938 clk_50MHz 
+    Info (332119):     0.314               0.000 clock_divider:clk_div|clk_1Hz 
+Info (332146): Worst-case hold slack is 0.311
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.310               0.000 clock_divider:clk_div|clk_1Hz 
-    Info (332119):     0.385               0.000 clk_50MHz 
+    Info (332119):     0.311               0.000 clock_divider:clk_div|clk_1Hz 
+    Info (332119):     0.387               0.000 clk_50MHz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -523,29 +523,29 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.407
+Info (332146): Worst-case setup slack is -1.502
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.407              -7.003 clk_50MHz 
+    Info (332119):    -1.502              -7.488 clk_50MHz 
     Info (332119):     0.659               0.000 clock_divider:clk_div|clk_1Hz 
 Info (332146): Worst-case hold slack is 0.151
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.151               0.000 clock_divider:clk_div|clk_1Hz 
-    Info (332119):     0.165               0.000 clk_50MHz 
+    Info (332119):     0.166               0.000 clk_50MHz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -30.700 clk_50MHz 
+    Info (332119):    -3.000             -30.966 clk_50MHz 
     Info (332119):    -1.000              -2.000 clock_divider:clk_div|clk_1Hz 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Fri Nov 22 10:28:48 2024
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4895 megabytes
+    Info: Processing ended: Fri Dec 13 01:23:20 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:04
 
 

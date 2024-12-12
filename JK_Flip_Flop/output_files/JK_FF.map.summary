@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Dec  5 19:03:36 2024
+Analysis & Synthesis Status : Successful - Fri Dec 13 01:22:47 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : JK_FF
-Top-level Entity Name : JK_FF
+Top-level Entity Name : top
 Family : MAX 10
-Total logic elements : 2
-    Total combinational functions : 2
-    Dedicated logic registers : 2
-Total registers : 2
+Total logic elements : 50
+    Total combinational functions : 50
+    Dedicated logic registers : 29
+Total registers : 29
 Total pins : 6
 Total virtual pins : 0
 Total memory bits : 0
